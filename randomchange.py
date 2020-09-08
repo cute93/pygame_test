@@ -31,6 +31,7 @@ while endFlag:
             if event.key == pygame.K_c:
                 backColor = getRandomColor()
     screen.fill(backColor)
+    pygame.draw.rect(screen, (4,4,4), (10,10,20,20),1)
     pygame.display.flip()
     clock.tick(FPS)
 
